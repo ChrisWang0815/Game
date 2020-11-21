@@ -1,0 +1,75 @@
+body {
+  background-color: rgba(248, 238, 195, 0.5);
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  color: #d43030;
+  letter-spacing: 5px;
+  font-size: 70px;
+  margin-bottom: 50px;
+}
+.content {
+  width: 600px;
+  margin: 0 auto;
+}
+ul {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+ul li {
+  flex: 1;
+  width: 200px;
+  height: 200px;
+}
+ul:first-child,
+ul:nth-child(2) {
+  border-bottom: 4px solid #000;
+}
+ul:first-child::after,
+ul:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  left: 200px;
+  top: 0;
+  width: 4px;
+  height: 608px;
+  background-color: black;
+  z-index: 999;
+}
+ul:nth-child(2)::after {
+  left: 400px;
+  top: -204px;
+}
+.x {
+  background-image: url(X.png);
+  background-size: 100px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 999;
+}
+.o {
+  background-image: url(O.png);
+  background-size: 100px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 999;
+}
+.x1 {
+  background-image: url(X1.png);
+  background-size: 100px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.o1 {
+  background-image: url(O1.png);
+  background-size: 100px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
